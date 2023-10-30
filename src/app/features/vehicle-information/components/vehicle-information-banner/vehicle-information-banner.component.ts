@@ -13,7 +13,6 @@ export class VehicleInformationBannerComponent implements OnInit {
 
   constructor(private store: Store<AppState>) {
     this.selectedVehicleType$ = this.store.select('selectedVehicleType');
-    this.selectedVehicleType$.subscribe((value) => console.log(value));
   }
 
   ngOnInit(): void {}

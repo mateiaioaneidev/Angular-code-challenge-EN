@@ -6,6 +6,5 @@ export const licensePlateValidator: ValidatorFn = (
 ): ValidationErrors | null => {
   const licensePlateCheck = new KentekenCheck(control.value);
   licensePlateCheck.formatLicense();
-  //   console.log(licensePlateCheck);
   return licensePlateCheck.valid === true ? null : { licensePlateError: true };
 };
